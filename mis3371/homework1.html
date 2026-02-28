@@ -1,0 +1,251 @@
+ <!--
+Program name: patient-form.html
+Author: Oscar Aguirre
+Date created: 02/26/2026
+Date last edited: 02/26/2026
+Version: 1.0
+Description: Patient registration form for MIS3371 Homework 1
+-->
+
+
+<html>
+
+<head>
+
+<title>BayouCare Medical Registration</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script>
+
+function showDate() 
+{
+
+const today = new Date();
+
+document.getElementById("today").innerHTML = today.toDateString();
+}
+
+</script>
+
+</head>
+
+<body onload="showDate()">
+
+<div id="header">
+
+<img src="logo.png" id="logo" alt="Medical Logo">
+
+<h1>BayouCare Medical</h1>
+
+<p>Today is: <span id="today"></span></p>
+
+</div>
+
+
+<div id="main">
+
+<h2>Patient Registration Form</h2>
+
+<form action="thankyou.html">
+
+<table>
+
+<tr>
+<td>First Name</td>
+<td><input type="text" name="first_name" maxlength="30"></td>
+
+<td>MI</td>
+<td><input type="text" name="middle_initial" maxlength="1"></td>
+
+<td>Last Name</td>
+<td><input type="text" name="last_name" maxlength="30"></td>
+</tr>
+
+<tr>
+<td>Date of Birth</td>
+<td><input type="text" placeholder="MM/DD/YYYY"></td>
+</tr>
+
+<tr>
+<td>Social Security</td>
+<td><input type="password" maxlength="11"></td>
+</tr>
+
+<tr>
+<td>Address Line 1</td>
+<td><input type="text" maxlength="30"></td>
+</tr>
+
+<tr>
+<td>Address Line 2</td>
+<td><input type="text" maxlength="30"></td>
+</tr>
+
+<tr>
+<td>City</td>
+<td><input type="text" maxlength="30"></td>
+
+<td>State</td>
+
+<td>
+<select>
+
+<option>TX</option>
+<option>CA</option>
+<option>NY</option>
+<option>FL</option>
+<option>IL</option>
+
+</select>
+</td>
+
+<td>Zip</td>
+<td><input type="text"></td>
+
+</tr>
+
+<tr>
+
+<td>Email</td>
+<td><input type="email"></td>
+
+</tr>
+
+<tr>
+
+<td>Symptoms</td>
+
+<td colspan="5">
+
+<textarea rows="3" cols="50"></textarea>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>Medical History</td>
+
+<td colspan="5">
+
+<input type="checkbox">Chicken Pox
+<input type="checkbox">Measles
+<input type="checkbox">Covid-19
+<input type="checkbox">Small Pox
+<input type="checkbox">Tetanus
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>Gender</td>
+
+<td>
+
+<input type="radio" name="gender">Male
+<input type="radio" name="gender">Female
+<input type="radio" name="gender">Other
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>Vaccinated?</td>
+
+<td>
+
+<input type="radio" name="vaccinated">Yes
+<input type="radio" name="vaccinated">No
+
+
+</tr>
+
+<tr>
+
+<td>Insurance?</td>
+
+<td>
+
+<input type="radio" name="insurance">Yes
+<input type="radio" name="insurance">No
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>Health Rating</td>
+
+<td>
+
+<input type="range" min="1" max="10">
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>User ID</td>
+
+<td><input type="text" maxlength="20"></td>
+
+</tr>
+
+<tr>
+
+<td>Password</td>
+
+<td><input type="password"></td>
+
+</tr>
+
+<tr>
+
+<td>Re-enter Password</td>
+
+<td><input type="password"></td>
+
+</tr>
+
+<tr>
+
+<td colspan="6">
+
+<input type="reset" value="CLEAR AND START OVER">
+
+<input type="submit" value="Submit">
+
+</td>
+
+</tr>
+
+</table>
+
+</form>
+
+</div>
+
+
+<div id="footer">
+
+<p>BayouCare Medical</p>
+
+<p>PO BOX 18881</p>
+
+<p>Sugar Land TX 77496</p>
+
+<button>Contact Us</button>
+
+</div>
+
+</body>
+
+</html>
